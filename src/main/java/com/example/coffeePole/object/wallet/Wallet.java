@@ -14,4 +14,12 @@ public class Wallet {
         else return true;
     }
 
+    public void minusMoney(Menu menu){
+        money.amount = money.getAmount()-menu.getPrice().getAmount();
+    }
+
+    public int getMoney(){
+        return money.getAmount();
+    }
+
 }

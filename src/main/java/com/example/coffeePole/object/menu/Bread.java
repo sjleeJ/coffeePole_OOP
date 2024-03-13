@@ -1,14 +1,13 @@
 package com.example.coffeePole.object.menu;
 
-public class Coffee implements Food {
-    private String name;
+public class Bread {
+    String name;
 
-    public Coffee(String name){
+    public Bread(String name){
         this.name = name;
     }
 
     public String getName() {
         return name;
     }
-
 }

@@ -1,5 +1,7 @@
 package com.example.coffeePole.object;
 
+import com.example.coffeePole.object.menu.Menu;
+import com.example.coffeePole.object.wallet.Money;
 import com.example.coffeePole.object.wallet.Wallet;
 
 public class Guest {
@@ -9,4 +11,7 @@ public class Guest {
         this.wallet = wallet;
     }
 
+    public boolean checkMenu(Menu menu){
+        return wallet.checkMoney(menu);
+    }
 }

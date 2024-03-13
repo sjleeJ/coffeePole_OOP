@@ -1,16 +1,7 @@
 package com.example.coffeePole.object;
 
-public class Storage {
+import com.example.coffeePole.object.menu.Menu;
 
-    private int stock;
-
-    public Storage(int stock){
-        this.stock = stock;
-    }
-
-    public boolean check(){
-        if(stock>0) return true;
-        else return false;
-    }
-
+public interface Storage {
+    public boolean check(Menu men);
 }

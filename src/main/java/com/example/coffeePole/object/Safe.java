@@ -1,18 +1,19 @@
 package com.example.coffeePole.object;
 
 
+import com.example.coffeePole.object.menu.Menu;
 import com.example.coffeePole.object.wallet.Money;
 
 import java.util.ArrayList;
 
 //금고
 public class Safe {
-    private ArrayList<Money> moneys = new ArrayList<>();
+    private ArrayList<Menu> moneys = new ArrayList<Menu>();
     private static Safe instance;
     private Safe(){}
 
-    public void saveMoney(Money money){
-        moneys.add(money);
+    public void saveMoney(Menu menu){
+        moneys.add(menu);
     }
     public static Safe getInstance(){
         if(instance == null){
@@ -22,9 +23,10 @@ public class Safe {
     }
     public int calculateMoney(){
         int price = 0;
-        for(Money money:moneys){
-            price += money.getAmount();
+        for(Menu menu:moneys){
+            price += menu.getPrice().getAmount();
         }
         return price;
     }
+
 }

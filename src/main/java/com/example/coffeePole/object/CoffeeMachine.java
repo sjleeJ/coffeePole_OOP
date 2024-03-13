@@ -1,15 +1,19 @@
 package com.example.coffeePole.object;
 
-import com.example.coffeePole.object.menu.Beverage;
 import com.example.coffeePole.object.menu.Coffee;
 import com.example.coffeePole.object.menu.Menu;
+import com.example.coffeePole.object.menu.Food;
 
 public class CoffeeMachine {
 
-    private Storage storage;
+    private final Storage storage;
 
-    public Beverage makeCoffe(Menu menu) throws Exception {
-        if(!storage.check()) throw new Exception("재고가 없습니다.");
+    public CoffeeMachine(Storage storage) {
+        this.storage = storage;
+    }
+
+    public Food makeCoffe(Menu menu) throws Exception {
+        if(!storage.check(menu)) throw new Exception("재고가 없습니다.");
         return new Coffee(menu.getName());
     }
 }
