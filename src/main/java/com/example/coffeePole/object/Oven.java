@@ -1,6 +1,6 @@
 package com.example.coffeePole.object;
 
-import com.example.coffeePole.object.menu.Bread;
+import com.example.coffeePole.object.menu.bread.Bread;
 import com.example.coffeePole.object.menu.Menu;
 
 public class Oven {

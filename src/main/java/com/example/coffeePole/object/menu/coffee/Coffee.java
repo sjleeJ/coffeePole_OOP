@@ -1,6 +1,8 @@
-package com.example.coffeePole.object.menu;
+package com.example.coffeePole.object.menu.coffee;
 
-public class Coffee implements Food {
+import com.example.coffeePole.object.menu.Food;
+
+public class Coffee extends Food {
     private String name;
 
     public Coffee(String name){

@@ -1,5 +1,7 @@
 package com.example.coffeePole.object.menu;
 
-public interface Food {
-    public String getName();
+public abstract class Food  {
+    public String getName() {
+        return null;
+    }
 }
