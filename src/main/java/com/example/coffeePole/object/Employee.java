@@ -1,8 +1,8 @@
 package com.example.coffeePole.object;
 
-import com.example.coffeePole.object.menu.Bread;
+import com.example.coffeePole.object.menu.bread.Bread;
+import com.example.coffeePole.object.menu.coffee.Coffee;
 import com.example.coffeePole.object.menu.Menu;
-import com.example.coffeePole.object.menu.Food;
 
 public class Employee {
     private CoffeeMachine coffeeMachine;
@@ -12,7 +12,7 @@ public class Employee {
         this.coffeeMachine = coffeeMachine;
     }
 
-    public Food makeCoffee(Menu menu) throws Exception {
+    public Coffee makeCoffee(Menu menu) throws Exception {
         return coffeeMachine.makeCoffe(menu);
     }
 
