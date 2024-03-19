@@ -5,7 +5,7 @@ import com.example.coffeePole.object.menu.Menu;
 import com.example.coffeePole.object.menu.Recipe;
 import com.example.coffeePole.object.menu.coffee.Coffee;
 
-public class CoffeeStaff implements Recipe<Coffee>,Staff {
+public class CoffeeStaff extends Food<Recipe> implements Staff {
     private Coffee coffee;
 
     @Override
